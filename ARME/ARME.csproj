@@ -1,0 +1,215 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{ED3C0D12-CA66-4055-A9EF-659DC4222211}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ARME</RootNamespace>
+    <AssemblyName>ARME</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CoordGetter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CoordGetter.designer.cs">
+      <DependentUpon>CoordGetter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KnobControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MapFileRes\Converter.cs" />
+    <Compile Include="MapFileRes\FileIO.cs" />
+    <Compile Include="MapFileRes\MAPJPG.cs" />
+    <Compile Include="MapFileRes\NFA.cs" />
+    <Compile Include="MapFileRes\NFARes.cs" />
+    <Compile Include="MapFileRes\NFC.cs" />
+    <Compile Include="MapFileRes\NFCRes.cs" />
+    <Compile Include="MapFileRes\NFE.cs" />
+    <Compile Include="MapFileRes\NFERes.cs" />
+    <Compile Include="MapFileRes\NFM.cs" />
+    <Compile Include="MapFileRes\NFMRes.cs" />
+    <Compile Include="MapFileRes\NFS.cs" />
+    <Compile Include="MapFileRes\NFSNPCRes.cs" />
+    <Compile Include="MapFileRes\NFSRes.cs" />
+    <Compile Include="MapFileRes\QPF.cs" />
+    <Compile Include="MapFileRes\QPFRes.cs" />
+    <Compile Include="MapFileRes\StringResource.cs" />
+    <Compile Include="MapFileRes\StringResourceRes.cs" />
+    <Compile Include="MapManager.cs" />
+    <Compile Include="NFASetter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NFASetter.designer.cs">
+      <DependentUpon>NFASetter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NFCSetter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NFCSetter.designer.cs">
+      <DependentUpon>NFCSetter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NFESetter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NFESetter.designer.cs">
+      <DependentUpon>NFESetter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NFMHelper.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NFMHelper.designer.cs">
+      <DependentUpon>NFMHelper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NFMPropSetter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NFMPropSetter.designer.cs">
+      <DependentUpon>NFMPropSetter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NFSSetter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NFSSetter.designer.cs">
+      <DependentUpon>NFSSetter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NPCSetter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NPCSetter.designer.cs">
+      <DependentUpon>NPCSetter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QPFSetter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QPFSetter.designer.cs">
+      <DependentUpon>QPFSetter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RappelzMapViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RappelzMapViewer.designer.cs">
+      <DependentUpon>RappelzMapViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Struct\StructNFS.cs" />
+    <Compile Include="TerrainEditer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TerrainEditer.designer.cs">
+      <DependentUpon>TerrainEditer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TextureEditer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TextureEditer.designer.cs">
+      <DependentUpon>TextureEditer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utility.cs" />
+    <EmbeddedResource Include="CoordGetter.resx">
+      <DependentUpon>CoordGetter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KnobControl.resx">
+      <DependentUpon>KnobControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MapFileRes\QPFSetter.resx" />
+    <EmbeddedResource Include="NFASetter.resx">
+      <DependentUpon>NFASetter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NFCSetter.resx">
+      <DependentUpon>NFCSetter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NFESetter.resx">
+      <DependentUpon>NFESetter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NFMHelper.resx">
+      <DependentUpon>NFMHelper.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NFMPropSetter.resx">
+      <DependentUpon>NFMPropSetter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NFSSetter.resx">
+      <DependentUpon>NFSSetter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NPCSetter.resx">
+      <DependentUpon>NPCSetter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="QPFSetter.resx">
+      <DependentUpon>QPFSetter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RappelzMapViewer.resx">
+      <DependentUpon>RappelzMapViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TerrainEditer.resx">
+      <DependentUpon>TerrainEditer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TextureEditer.resx">
+      <DependentUpon>TextureEditer.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
