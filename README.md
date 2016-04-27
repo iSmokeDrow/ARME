@@ -17,8 +17,14 @@ Future plans:
 - Review all .NF* classes for code optimizations and redundancy removal
 - Link to example setup for program use
 
-iSmokeDrow note:
+Updates so far:
 
-This source was given to me some time ago by C1ph3r before he quit, it was given around to some friends (with permission from C1ph3r). It is now being pushed to the public in the hope that work on it can be continued/completed. I have cleaned up several upon several .cs files in the project and I have added some drag functionality to the minimap.
+Ok, so I've had this source a long time and really haven't messed with it since I first had it. What I have done so far:
 
-If you are going to download the source please contact me via: tealskyproject@hotmail.com (skype) or via pm on EPVP (SilentWisdom) and I will make you a contributor that way this repo can be updated!
+- Added proper zooming support (mouse wheel) on the main map
+- Added proper drag support to the mini-map (click-hold and drag)
+-- Corrected minimap target indicator (red-box) scaling as main-map is zoomed
+- ALL .NF* classes have been cleaned and optimized 
+- Dropped partial 3D Support (Contact me for a version with this still implemented! [WARNING! 3D version is missing all updates]
+
+With C1ph3r gone I am hoping that he will understand the communities need for this program to be updated and finished!
