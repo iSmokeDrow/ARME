@@ -5,6 +5,10 @@ Uses:
 
 Viewing/Editing Rappelz Map Files
 
+Foreword:
+
+C1ph3r was a giant when it came to being a "dev" for the Rappelz P-Server Scene, his work deserves to live on through those who still want to carry the mantle of Rappelz!
+
 General notes:
 
 - 3D viewing was partially implemented but ultimately I removed it because it was rather broken and bogged the program down
